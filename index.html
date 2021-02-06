@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Star Wars</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+	<link rel="shortcut icon" type="image/x-icon" href="img/imperialseal.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+
+	<div id="Btn-menu" class="btn-menu">
+		<a class="volver-arriba" href="#" class="volver-arriba">
+        	<img src="img/imperialseal.png">
+      	</a>
+	</div>
+
+	<header>
+
+		<div class="menu-principal">
+			<div class="logo">
+				<a href="#"><img src="img/imperialseal.png"></a>
+			</div>
+
+			<nav>
+				<a class="scroll-suave-nosotros" href="#Nosotros">About us</a>
+				<a class="scroll-suave-contacto" href="#Contacto">Contact</a>
+			</nav>
+		</div>
+
+	</header>
+
+	<section class="main">
+		<section id="Banner" class="banner" data-parallax="scroll" data-image-src="img/700985.jpg">
+			<div id="Banner-text" class="banner-text">
+				<p>
+					We offer you different military career alternatives: Infantry, Strike Battalion and FN Corps.
+					We invite you to join an armed force with more than 2000 years of history and a mission
+					unalterable: prepare to defend the Empire.
+				</p>
+
+				<div class="btn-banner">
+					<a href="#">Enlist</a>
+				</div>
+			</div>
+			
+		</section>
+
+		<section id="Nosotros" class="nosotros">
+
+			<div class="contenedor">
+				<div class="intro">
+					<div class="intro-imagen">
+						<img src="img/intro.jpg">
+					</div>
+
+					<div class="intro-texto">
+						<h3>About us</h3>
+						<p>
+							A Security Force, of a Military nature with characteristics of an Intermediate Force, which fulfills its mission and its functions within the framework of Internal Security, Defense of the empire and support for Foreign Policy.
+
+							By intermediate force we understand an organization with a military status with capacities to deter and respond to threats, crises, contingencies and incidents in the areas of Internal Security and Intergalactic Defense, generating skills for its commitment in operations to Support the Foreign Policy of the empire .
+
+							It depends on the Ministry of Security, integrating the Internal Security System provided for in Law No. 24,059 and integrating the Defense System of the new republic in accordance with the provisions of Law No. 23,554.
+						</p>
+					</div>
+				</div>
+
+				<div class="unidades-militares">
+
+					<div id="menuUnidades" class="menu-unidades">
+						<h3>Military units</h3>
+						<div class="btn-unidad">
+							<a href="#menuUnidades" data-unidad="#Infanteria">Infantry</a>
+							<a href="#menuUnidades" data-unidad="#Batallon">Strike Battalion</a>
+							<a href="#menuUnidades" data-unidad="#Cuerpo">FN Corps</a>
+						</div>
+					</div>
+
+					<div id="Infanteria" class="unidad">
+						<h4>Infantry</h4>
+						<p>
+							The infantry was the branch of an army made up of soldiers trained to fight on foot. The infantrymen, colloquially referred to as "grunts", were also collectively known as ground forces. In order to survive on the battlefield, they relied on their training and equipment almost as much as they trusted each other.
+						</p>
+
+						<div class="unidad-imagen">
+							<img src="img/soldado1.jpg">
+						</div>
+					</div>
+					<div id="Batallon" class="unidad">
+						<h4>212th Strike Battalion</h4>
+						<p>
+							The 212th Strike Battalion was a military unit of clone troopers that served the Galactic Republic and later the Galactic Empire. During the Clone Wars, the battalion participated in many battles under the command of Jedi General Obi-Wan Kenobi and Clone Commander Cody. When they invaded Utapau as part of the search for General Grievous, the Order 66 clone protocol was executed, leading them to betray their Jedi leader Obi-Wan Kenobi.
+
+							Shortly after the Battle of Utapau ended, the Republic reformed into the first Galactic Empire, the 212th Battalion continuing to demonstrate their loyalty. During their days in service to the Empire, they were sent to Kashyyyk under General Kahdah to end a Wookiee revolt, in which they were successful.
+						</p>
+
+						<div class="unidad-imagen">
+							<img src="img/soldado2.jpg">
+						</div>
+					</div>
+					<div id="Cuerpo" class="unidad">
+						<h4>FN Corps</h4>
+						<p>
+							
+							The FN Corps was a stormtrooper unit of the First Order Armed Forces. Before their first deployment, members of the FN Corps were trained by Captain Phasma, who believed that her unit would be the most skilled in the First Order.
+
+							They used their vibro blades to attack their opponents and defended themselves with their blaster-proof shields.
+						</p>
+
+						<div class="unidad-imagen">
+							<img src="img/soldado3.jpg">
+						</div>
+					</div>
+				</div>
+			</div>			
+		</section>
+
+		<section id="Contacto" class="contacto">
+			<div class="contenedor">
+				<div class="formulario" id="formulario">
+
+					<h3>Enlist in the army</h3>
+
+					<form>
+						<div>
+							<input type="text" name="nombre" placeholder="Name" id="nombre">
+							<p class="error">Please enter your name</p>
+						</div>
+						<div>
+							<input type="email" name="email" placeholder="E-mail" id="email">
+							<p class="error">Please enter your email</p>
+						</div>
+						<div>
+							<textarea name="mensaje" placeholder="Why should we recruit you?" id="mensaje"></textarea>
+							<p class="error">Please write your message</p>
+						</div>
+						<div>
+							<input id="Enviar" type="submit" name="enviar" value="Send">
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<section class="slider-caja">
+			<div id="sliders" class="sliders">
+				<div class="slide">
+					<img src="img/slide(1).jpg">
+				</div>
+				<div class="slide">
+					<img src="img/slide(2).jpg">
+				</div>
+				<div class="slide">
+					<img src="img/slide(3).jpg">
+				</div>
+				<div class="slide">
+					<img src="img/slide(4).jpg">
+				</div>
+				<div class="slide">
+					<img src="img/slide(5).jpg">
+				</div>
+				<div class="slide">
+					<img src="img/slide(6).jpg">
+				</div>
+				<div class="slide">
+					<img src="img/slide(7).jpg">
+				</div>
+			</div>
+		</section>
+
+	</section>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/parallax.min.js"></script>
+	<script src="js/btn-show.js"></script>
+	<script src="js/slider.js"></script>
+	<script src="js/scroll.js"></script>
+	<script src="js/jquery.animate-colors-min.js"></script>
+	<script src="js/validacion.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,365 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Noto Sans JP', sans-serif;
+	font-size: 15px;
+	color: #E0D3C2;
+	background-color: #434343;
+	margin: auto;
+	padding: 0;
+	max-width: 1920px;
+}
+
+/* General*/
+
+.contenedor {
+	width: 90%;
+  	max-width: 1080px;
+  	margin: 0 auto;
+}
+
+.btn-menu {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background: rgba(0,0,0,0.5);
+	border-radius: 30%;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 99999;
+	margin-right: 60px;
+	transition: all .4s ease;
+	text-align: center;
+}
+
+.btn-menu a img {
+	width: 80%;
+	margin-top: 4px;
+}
+
+/* Menu*/
+
+.menu-principal {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid #E0D3C2;
+	background-color: transparent;
+	position: absolute;
+	width: 100%;
+	padding: 0 10px;
+	max-width: 1920px;
+}
+
+.menu-principal .logo {
+	width: 50px;
+	padding: 5px;
+}
+
+.menu-principal .logo img {
+	width: 100%;
+}
+
+.menu-principal nav a {
+	text-decoration: none;
+	color: #E0D3C2;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 500;
+	margin-right: 20px;
+}
+
+.menu-principal nav a:hover {
+	color: #2471A3;
+}
+
+/* Banner */
+
+.banner {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+}
+
+.banner .banner-text {
+	padding: 20px;
+	margin-left: -100%;
+	width: 40%;
+	background-color: rgba(0, 0, 0, 0.9);
+	transition: all .4s ease;
+}
+
+.banner .banner-text p {
+	font-size: 25px;
+}
+
+.banner .banner-text .btn-banner  {
+	text-align: right;
+	padding: 20px;
+}
+
+.banner .banner-text .btn-banner a {
+	text-decoration: none;
+	color: #E0D3C2;
+	padding: 10px;
+	border: 1px solid #E0D3C2;
+	font-weight: 600;
+	transition: all .4s ease;
+}
+
+.banner .banner-text .btn-banner a:hover , .nosotros .unidades-militares .menu-unidades a:hover {
+	color: #2471A3;
+	border:1px solid #2471A3;
+}
+
+/* Nosotros */
+
+.nosotros {
+	padding: 100px;
+}
+
+.nosotros .contenedor {
+	border-bottom: 1px solid #E0D3C2;
+}
+
+.nosotros .intro {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+
+.nosotros .intro .intro-imagen {
+	width: 45%;
+	margin: 30px;
+}
+
+.nosotros .intro .intro-imagen img {
+	width: 100%;
+}
+
+.nosotros .intro .intro-texto {
+	width: 45%;
+	margin: 30px;
+}
+
+.nosotros .intro .intro-texto p {
+	text-align: justify;
+	font-size: 22px;
+}
+
+.nosotros .intro .intro-texto h3 {
+	font-size: 40px;
+	color: #2471A3;
+}
+
+.nosotros .unidades-militares {
+	margin: 100px 0;
+}
+
+.nosotros .unidades-militares .menu-unidades {
+	text-align: center;
+}
+
+.nosotros .unidades-militares .menu-unidades h3 {
+	font-size: 40px;
+}
+
+.nosotros .unidades-militares .menu-unidades a {
+	text-decoration: none;
+	color: #E0D3C2;
+	font-size: 15px;
+	padding: 10px;
+	border: 1px solid #E0D3C2;
+	margin: 10px 30px;
+	transition: all .4s ease;
+	font-weight: 600;
+}
+
+.nosotros .unidades-militares .unidad {
+	margin-top: 100px;
+	display: none;
+}
+
+.nosotros .unidades-militares .unidad h4 {
+	font-size: 30px;
+}
+
+.nosotros .unidades-militares .unidad p {
+	font-size: 20px;
+}
+
+.nosotros .unidades-militares .unidad .unidad-imagen {
+	text-align: center;
+	width: 100%;
+	margin-top: 50px;
+}
+
+.nosotros .unidades-militares .unidad .unidad-imagen img {
+	width: 50%;
+}
+
+/* Contacto */
+
+.contacto {
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+.contacto .formulario h3 {
+	font-size: 40px;
+}
+
+.contacto .formulario form input[type="text"] , .contacto .formulario form input[type="email"] {
+	width: 500px;
+	outline: none;
+	border: none;
+	background: none;
+	padding: 10px;
+	border-bottom: 1px solid #E0D3C2;
+	border-right: 1px solid #E0D3C2;
+	color: #E0D3C2;
+	margin-bottom: 50px;
+}
+
+.contacto .formulario form textarea {
+	max-width: 500px;
+	min-width: 500px;
+	max-height: 200px;
+	min-height: 200px;
+	background: none;
+	padding: 10px;
+	outline: none;
+	border: none;
+	border-bottom: 1px solid #E0D3C2;
+	border-right: 1px solid #E0D3C2;
+	color: #E0D3C2;
+	margin-bottom: 50px;
+}
+
+.contacto .formulario form input[type="submit"] {
+	text-decoration: none;
+	color: #E0D3C2;
+	padding: 10px;
+	border: 1px solid #E0D3C2;
+	font-weight: 600;
+	transition: all .4s ease;
+	background: none;
+	width: 100px;
+}
+
+.contacto .formulario form input[type="submit"]:hover {
+	color: #2471A3;
+	border:1px solid #2471A3;
+}
+
+.error {
+	color: #FC5439;
+	font-size: 10px;
+	display: none;
+}
+
+/* Slider */
+
+.main .slider-caja {
+	width: 100%;
+	overflow: hidden;
+	padding: 54px 0;
+}
+
+.main .slider-caja .sliders {
+	width: 400%;
+	display: flex;
+	padding: 0;
+}
+
+.main .slider-caja .sliders .slide {
+	width: 100%;
+	margin-right: 50px;
+}
+
+.main .slider-caja .sliders .slide  img {
+	width: 100%;
+}
+
+/* Responsive */
+
+
+@media screen and (max-width:1280px) {
+	.nosotros .intro .intro-texto p {
+		font-size: 15px;
+	}	
+}
+
+@media screen and (max-width:1024px) {
+
+	.banner {
+		display: none;
+	}
+
+	.nosotros .intro .intro-imagen {
+		display: none;
+	}
+
+	.nosotros .intro .intro-texto {
+		width: 100%;
+	}	
+}
+
+
+@media screen and (max-width:768px) {
+
+	.nosotros {
+		padding: 80px 10px;
+	}
+
+	.nosotros .intro .intro-imagen {
+		display: none;
+	}
+
+	.nosotros .intro .intro-texto {
+		width: 100%;
+	}
+
+	.nosotros .intro .intro-texto p {
+		font-size: 10px;
+	}	
+
+	.nosotros .intro .intro-texto h3 , .nosotros .unidades-militares .menu-unidades h3 , .contacto .formulario h3  {
+		font-size: 30px;
+	}
+
+	.nosotros .unidades-militares .menu-unidades a {
+		display: block;
+	}
+
+	.nosotros .unidades-militares .unidad h4 {
+		font-size: 20px;
+	}
+
+	.nosotros .unidades-militares .unidad p {
+		font-size: 10px;
+	}
+
+	.nosotros .unidades-militares .unidad .unidad-imagen img {
+		width: 90%;
+	}
+
+	.contacto .formulario form input[type="text"] , .contacto .formulario form input[type="email"] {
+		width: 100%;
+	}
+
+	.contacto .formulario form textarea {
+		max-width: 100%;
+		min-width: 100%;
+	}
+
+	.main .slider-caja {
+		display: none;
+	}
+
+}
