@@ -297,8 +297,17 @@ body {
 
 @media screen and (max-width:1024px) {
 
-	.banner {
-		display: none;
+	.banner .banner-text {
+		padding: 10px;
+		width: 50%;
+	}
+
+	.banner .banner-text p , .banner .banner-text .btn-banner a {
+		font-size: 15px;
+	}
+
+	.banner .banner-text .btn-banner  {
+		padding: 10px;
 	}
 
 	.nosotros .intro .intro-imagen {
